@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Newsreader", "Iowan Old Style", "Palatino Linotype", serif;
+  --font-sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", ui-monospace, monospace;
+
+  --color-bg: #0a0a0b;
+  --color-surface: #121214;
+  --color-elevated: #1a1a1e;
+  --color-fg: #f4f4f5;
+  --color-muted: #a1a1aa;
+  --color-subtle: #71717a;
+  --color-border: #26262b;
+  --color-accent: #c5c9d1;
+  --color-accent-fg: #0a0a0b;
+  --color-ok: #8fa896;
+  --color-warn: #c4b08a;
+  --color-danger: #c48a8a;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --shadow-panel: 0 12px 40px -24px rgb(0 0 0 / 0.55);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  html[data-theme="paper"] {
+    --color-bg: #f3f1ec;
+    --color-surface: #fbfaf7;
+    --color-elevated: #eceae4;
+    --color-fg: #161513;
+    --color-muted: #5c5a55;
+    --color-subtle: #7a7872;
+    --color-border: #d9d5cc;
+    --color-accent: #2b2e33;
+    --color-accent-fg: #fbfaf7;
+    --color-ok: #3f5a46;
+    --color-warn: #7a5e2a;
+    --color-danger: #8a3b3b;
+    --shadow-panel: 0 12px 32px -20px rgb(40 36 28 / 0.18);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-bg);
+    color: var(--color-fg);
+    min-height: 100dvh;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-accent) 35%, transparent);
+    color: var(--color-fg);
+  }
+}
+
+@layer utilities {
+  .grid-veil {
+    background-image:
+      linear-gradient(to right, color-mix(in oklab, var(--color-fg) 5%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklab, var(--color-fg) 5%, transparent) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

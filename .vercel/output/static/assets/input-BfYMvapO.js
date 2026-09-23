@@ -1,0 +1,1 @@
+import{a as e,i as t,t as n}from"./utils-B3gir114.js";e();var r=t();function i({className:e,...t}){return(0,r.jsx)(`input`,{className:n(`flex h-10 w-full rounded-sm border border-border bg-surface px-3 text-sm text-fg placeholder:text-subtle outline-none transition-colors focus-visible:ring-2 focus-visible:ring-accent/40`,e),...t})}export{i as t};

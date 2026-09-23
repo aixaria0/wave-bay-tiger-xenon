@@ -1,0 +1,9 @@
+export const HBAR = 1.054571817e-34;
+export const C = 2.99792458e8;
+export const G = 6.6743e-11;
+export const KB = 1.380649e-23;
+export const M_SUN = 1.98847e30;
+export const M_SUN_G = 1.98847e33;
+export const YEAR = 365.25 * 24 * 3600;
+export const EV_J = 1.602176634e-19;
+export const MEV_J = EV_J * 1e6;

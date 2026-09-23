@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Fracture Archive",
+      "hasCanvas": false,
+      "bodyTextLen": 1347,
+      "bodyTextHash": "a45ba2daac3c7c7e395f8ee69050bb654b9abd936051546510d0c7fad20a24ba",
+      "bodyTextPrefix": "F Fracture Archive RESEARCH OPS Command Overview Archive Monolog",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Fracture Archive",
+      "hasCanvas": false,
+      "bodyTextLen": 1308,
+      "bodyTextHash": "cefc196bfa7f2d90329e8760e28ea9661c5b71d25f9cc440d76284dc45d37002",
+      "bodyTextPrefix": "Controls VOLUME SET 52–145 · EXTENDED FIELD NOTES The complete f",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

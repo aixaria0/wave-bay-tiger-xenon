@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Fracture Archive",
+      "hasCanvas": false,
+      "bodyTextLen": 1600,
+      "bodyTextHash": "fcd25561cb6845a48b5435a7d28973749c8738742ad1511f019104d8d026614e",
+      "bodyTextPrefix": "F Fracture Archive RESEARCH OPS Command Overview Archive Monolog",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Fracture Archive",
+      "hasCanvas": false,
+      "bodyTextLen": 1308,
+      "bodyTextHash": "cefc196bfa7f2d90329e8760e28ea9661c5b71d25f9cc440d76284dc45d37002",
+      "bodyTextPrefix": "Controls VOLUME SET 52–145 · EXTENDED FIELD NOTES The complete f",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": true,
+  "baselineReasons": [
+    "desktop: body text changed (1347 -> 1600 chars, hash mismatch)"
+  ]
+}
