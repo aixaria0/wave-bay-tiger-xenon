@@ -1,4 +1,4 @@
-import { C, G, HBAR, KB, M_SUN, MEV_J } from "./constants";
+import { C, G, HBAR, KB, M_SUN, MEV_J } from "./constants.ts";
 import type { RadiationField } from "@/lib/store";
 
 export function hawkingTKelvin(massKg: number): number {
@@ -105,14 +105,6 @@ export function integratePower(
 }
 
 /** Approximate luminosity in watts, Page 1976 scaling. */
-export function luminosityWatts(massKg: number, gStar = 10.75): number {
-  const t = hawkingTKelvin(massKg);
-  const sigma = 5.670374419e-8;
-  const rs = (2 * G * massKg) / C ** 2;
-  const area = 4 * Math.PI * rs * rs;
-  return 3.6e-29 * gStar * Math.pow(M_SUN / massKg, 2) + 1e-40 * sigma * area * t ** 4 * 0;
-}
-
 export function pageLuminosityW(massKg: number, gStar = 10.75): number {
   return 7.8e-29 * gStar * Math.pow(M_SUN / Math.max(massKg, 1e-6), 2);
 }

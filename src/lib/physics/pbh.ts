@@ -1,5 +1,5 @@
-import { M_SUN_G, YEAR } from "./constants";
-import { evaporationYears, gStarOfTMeV, hawkingTMeV } from "./hawking";
+import { M_SUN_G, YEAR } from "./constants.ts";
+import { evaporationYears, gStarOfTMeV, hawkingTMeV } from "./hawking.ts";
 
 export type ConstraintPoint = {
   logM: number;

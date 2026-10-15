@@ -128,7 +128,6 @@ export function nttForward(a: number[], q: number, psi: number): number[] {
   const out = a.map((x) => ((x % q) + q) % q);
   let m = 1;
   while (m < n) {
-    const step = (2 * m) % n || n;
     for (let start = 0; start < n; start += 2 * m) {
       let w = 1;
       for (let j = 0; j < m; j++) {

@@ -49,15 +49,15 @@ function Home() {
         <div className="grid-veil pointer-events-none absolute inset-0 opacity-70" />
         <div className="relative flex flex-col gap-4 p-6 sm:p-8">
           <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-subtle">
-            Volume set 52–145 · extended field notes
+            FRACTURE ARCHIVE · INTERACTIVE RESEARCH DESK
           </p>
           <h1 className="max-w-2xl font-display text-4xl leading-[1.1] tracking-tight sm:text-5xl">
             The complete fracture, under glass.
           </h1>
           <p className="max-w-xl text-sm leading-relaxed text-muted">
-            A local research desk for the monologue: compression, post-quantum primitives,
-            holographic reconstruction, and primordial black holes. Every control is on-device.
-            No remote gates, no 403s.
+            A local-first research desk spanning compression, post-quantum primitives, holographic
+            reconstruction, Hawking radiation, and primordial black holes. Controls and reading state
+            persist in this browser; scientific toy models stay explicitly labeled.
           </p>
           <div className="flex flex-wrap gap-2">
             <Button asChild>

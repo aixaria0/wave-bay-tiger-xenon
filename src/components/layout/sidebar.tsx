@@ -58,7 +58,7 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
       </nav>
       {!collapsed && (
         <p className="px-4 pb-4 font-mono text-[10px] uppercase tracking-widest text-subtle">
-          Local · no auth · no 403
+          LOCAL-FIRST · BROWSER STATE
         </p>
       )}
     </aside>

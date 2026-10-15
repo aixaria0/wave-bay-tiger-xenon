@@ -34,7 +34,7 @@ function ArchiveIndex() {
   return (
     <div className="flex flex-col gap-6">
       <header className="flex flex-col gap-2">
-        <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-subtle">Monologue</p>
+        <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-subtle">Field notes</p>
         <h1 className="font-display text-4xl tracking-tight">Archive</h1>
         <p className="max-w-2xl text-sm text-muted">
           Full scientific spine from pruning through femtolensing. Search, filter by volume, bookmark
